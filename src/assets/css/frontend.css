@@ -1,0 +1,74 @@
+/* AURA Photo Awards Frontend Styles */
+
+.aura-submission-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aura-credits-info {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.aura-form-group {
+    margin-bottom: 20px;
+}
+
+.aura-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.aura-form-group input[type="text"],
+.aura-form-group input[type="file"],
+.aura-form-group textarea,
+.aura-form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Gallery Grid */
+.aura-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.aura-gallery-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aura-gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.aura-gallery-info {
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .aura-submission-form {
+        padding: 15px;
+    }
+    
+    .aura-gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
